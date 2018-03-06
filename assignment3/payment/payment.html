@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>coffeerun-payment</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+</head>
+
+<body class="container">
+  <header>
+    <h1>Payment</h1>
+  </header>
+
+    <section>
+      <form data-payment="form">
+        <div class="form-group">
+          <label for="name">
+            <span>Name:</span>
+            <strong><abbr title="required">*</abbr></strong>
+          </label>
+          <input type="text" id="name" name="name" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="number">
+          <span>Card number:</span>
+          <strong><abbr title="required">*</abbr></strong>
+        </label>
+          <input type="text" id="number" name="cardnumber" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="date">
+          <span>Expiration date:</span>
+          <strong><abbr title="required">*</abbr></strong>
+        </label>
+          <input type="text" id="date" name="expiration" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="cvv">
+          <span>CVV:</span>
+          <strong><abbr title="required">*</abbr></strong>
+          </label>
+          <input type="text" id="cvv" name="cvv" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-default" rel="modal:open" href="#ex1" data-modal>Submit</button>
+      </form>
+    </section>
+    <div id="ex1" class="modal">
+    <p></p>
+  </div>
+
+    <!-- Modal content
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Thank you for your payment</p>
+    </div> -->
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="scripts/payment.js" charset="utf-8"></script>
+    <script src="scripts/formhandler.js" charset="utf-8"></script>
+    <script src="scripts/datastore.js" charset="utf-8"></script>
+    <script src="scripts/main.js" charset="utf-8"></script>
+</body>
+
+</html>
